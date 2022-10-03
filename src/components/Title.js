@@ -1,6 +1,9 @@
 const Title = ({ name, type }) => {
-    const className = type === "bold" ? "bold" : "normal";
-    return <h1 className={className}>{name}</h1>;
+    if (type === "bold") {
+        return <h1 style={{ fontWeight: "bold" }}>{name}</h1>;
+    }
+        return <h1 style={{ fontWeight: "normal" }}>{name}</h1>;
+    
 }
 
 export default Title;
