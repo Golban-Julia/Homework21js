@@ -14,4 +14,8 @@ Title.propTypes = {
     type: PropTypes.oneOf(["bold", "normal"]),
 };
 
+Title.defaultProps = {
+    type: "normal",
+};
+
 export default Title;
